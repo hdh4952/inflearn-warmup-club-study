@@ -38,18 +38,6 @@ class Game {
 }
 
 function updateContainer(game, result) {
-  if (game.remainingGuesses === 0) {
-    const count = document.getElementById('count');
-    count.innerHTML = `<h2>게임 종료!</h2>
-    <h2 style="color: red">게임에서 ${game.playerWins < game.computerWins ? '졌습니다.' : '이겼습니다'}</h2>`;
-
-    const btnBar = document.getElementById('btn-bar');
-    btnBar.innerHTML = `<button onclick="location.reload()">다시 시작</button>`;
-
-    document.getElementById('result').remove();
-    return;
-  }
-
   const playerScore = document.getElementById('player-score');
   playerScore.textContent = game.playerWins;
 
@@ -70,5 +58,17 @@ function updateContainer(game, result) {
     case 'draw':
       gameResult.textContent = '무승부';
       break;
+  }
+
+  if (game.remainingGuesses === 0) {
+    const count = document.getElementById('count');
+    count.innerHTML = `<h2>게임 종료!</h2>
+    <h2 style="color: red">게임에서 ${game.playerWins < game.computerWins ? '졌습니다.' : '이겼습니다'}</h2>`;
+
+    const btnBar = document.getElementById('btn-bar');
+    btnBar.innerHTML = `<button onclick="location.reload()">다시 시작</button>`;
+
+    document.getElementById('result').remove();
+    return;
   }
 }
