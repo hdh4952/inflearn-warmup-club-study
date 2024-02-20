@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위 바위 보</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-title">
+        <h1>가위 바위 보</h1>
+      </div>
+      <div>
+        <div>
+          <div><h3>플레이어</h3></div>
+          <div id="player-score">0</div>
+        </div>
+        <div>
+          <div><h3>컴퓨터</h3></div>
+          <div id="computer-score">0</div>
+        </div>
+      </div>
+      <div id="count">
+        <div><h2>선택하기</h2></div>
+        <div>남은 횟수: 10</div>
+      </div>
+      <div id="btn-bar">
+        <button>가위</button>
+        <button>바위</button>
+        <button>보</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
