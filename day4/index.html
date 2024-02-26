@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        width: 500px;
+        background-color: beige;
+      }
+
+      .quiz-btn {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 24px;
+        width: 80px;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 4px;
+      }
+
+      .question-box {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 100px;
+      }
+
+      .answer-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        height: 300px;
+        width: 100%;
+        margin-left: 100px;
+      }
+
+      .answer-box button {
+        height: 30px;
+        width: 50px;
+        background-color: beige;
+        border: none;
+        text-align: left;
+      }
+      .answer-box button:hover {
+        cursor: pointer;
+        border-bottom: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="quiz-btn">Next</div>
+        <header class="question-box">Q. 4 + 2 ?</header>
+        <div class="answer-box">
+          <div>
+            <span>①</span>
+            <button>1</button>
+          </div>
+          <div>
+            <span>②</span>
+            <button>2</button>
+          </div>
+          <div>
+            <span>③</span>
+            <button>3</button>
+          </div>
+          <div>
+            <span>④</span>
+            <button>4</button>
+          </div>
+          <div>
+            <span>⑤</span>
+            <button>5</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
