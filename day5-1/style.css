@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+#notice > p {
+  background-color: green;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+}
+
+.input-container label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.input-container input {
+  outline: none;
+  height: 32px;
+}
+
+.input-container input:focus {
+  border: 1px solid aqua;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 24px;
+  background-color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 1px solid black;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+#book-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.book-container-row > div {
+  border-bottom: 1px solid lightgray;
+}
+
+.book-container-row:first-child > div {
+  font-weight: 600;
+}
+
+.book-container-row {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 8px;
+}
+
+.book-container-row > div {
+  height: 24px;
+  width: 40%;
+  margin-right: 4px;
+}
+
+.book-container-row > button {
+  width: 32px;
+  background-color: white;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 600;
+  height: 100%;
+  cursor: pointer;
+}
